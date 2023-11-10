@@ -18,10 +18,10 @@ public class Chassis {
     }
 
     public void chassisLoop() {
-        float x = -driverGamepad.left_stick_y;
-        float y = -driverGamepad.right_stick_x;
-        right_Drive.setPower(y - x);
-        left_Drive.setPower(x + y);
+        float y = - driverGamepad.left_stick_y;
+        float x = driverGamepad.right_stick_x;
+        right_Drive.setPower(y + x);
+        left_Drive.setPower(x - y);
     }
 }
 
